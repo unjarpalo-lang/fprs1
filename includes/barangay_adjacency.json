@@ -1,0 +1,1383 @@
+{
+  "metadata": {
+    "source": "https://portal.georisk.gov.ph/arcgis/rest/services/PSA/Barangay/MapServer/4",
+    "description": "PSA indicative barangay boundaries based on the 2015 census, observed June 2016; published by GeoRisk PH.",
+    "retrieved_date": "2026-10-14",
+    "method": "Two polygons are adjacent only when they share an exact, non-zero boundary segment; point contacts excluded. Shortest paths remain within Guimbal and Miagao.",
+    "source_sha256": "1ae040c0e012cbd0a37689ec55894c2bd64e93e15b4ede6807edad8a8ce1197a",
+    "counts": {
+      "Guimbal": 33,
+      "Miagao": 119
+    },
+    "components": [
+      152
+    ],
+    "edge_count": 376
+  },
+  "codes": {
+    "Sag-on, Miagao": "063030095",
+    "San Fernando, Miagao": "063030096",
+    "San Jose, Miagao": "063030097",
+    "San Rafael, Miagao": "063030098",
+    "Saring, Miagao": "063030100",
+    "Santa Rosa-Laguna, Guimbal": "063020033",
+    "Tan-agan, Miagao": "063030106",
+    "Sapa, Miagao": "063030099",
+    "Sibucao, Miagao": "063030101",
+    "Sipitan-Badiang, Guimbal": "063020031",
+    "Tabunacan, Miagao": "063030103",
+    "Tacas, Miagao": "063030104",
+    "Ticdalan, Miagao": "063030108",
+    "Tambong, Miagao": "063030105",
+    "Tigmarabo, Miagao": "063030114",
+    "Tatoy, Miagao": "063030107",
+    "Wayang, Miagao": "063030121",
+    "Tig-amaga, Miagao": "063030109",
+    "Tig-Apog-Apog, Miagao": "063030110",
+    "Tigbagacay, Miagao": "063030111",
+    "Tigmalapad, Miagao": "063030113",
+    "Tiglawa, Miagao": "063030112",
+    "To-og, Miagao": "063030115",
+    "Torreblanca-Blumentritt, Guimbal": "063020007",
+    "Tugura-ao, Miagao": "063030116",
+    "Tumagboc, Miagao": "063030117",
+    "Ubos Ilawod, Miagao": "063030118",
+    "Ubos Ilaya, Miagao": "063030119",
+    "Valencia, Miagao": "063030120",
+    "Agdum, Miagao": "063030001",
+    "Aguiauan, Miagao": "063030002",
+    "Alimodias, Miagao": "063030003",
+    "Anono-o, Guimbal": "063020001",
+    "Awang, Miagao": "063030004",
+    "Bacauan, Miagao": "063030006",
+    "Bacong, Guimbal": "063020002",
+    "Bacolod, Miagao": "063030007",
+    "Bagumbayan, Miagao": "063030008",
+    "Bagumbayan Poblacion, Guimbal": "063020003",
+    "Balantad-Carlos Fruto, Guimbal": "063020004",
+    "Banbanan, Miagao": "063030009",
+    "Banga, Miagao": "063030010",
+    "Bangladan, Miagao": "063030011",
+    "Banuyao, Miagao": "063030012",
+    "Baraclayan, Miagao": "063030013",
+    "Baras, Guimbal": "063020005",
+    "Bariri, Miagao": "063030014",
+    "Baybay Norte, Miagao": "063030015",
+    "Baybay Sur, Miagao": "063030016",
+    "Bugtong Naulid, Miagao": "063030023",
+    "Cabunotan, Miagao": "063030026",
+    "Belen, Miagao": "063030017",
+    "Binanua-an, Guimbal": "063020006",
+    "Bolho, Miagao": "063030018",
+    "Bolocaue, Miagao": "063030019",
+    "Bongol San Miguel, Guimbal": "063020008",
+    "Bongol San Vicente, Guimbal": "063020009",
+    "Buenavista Norte, Miagao": "063030020",
+    "Buenavista Sur, Miagao": "063030021",
+    "Bugtong Lumangan, Miagao": "063030022",
+    "Bulad, Guimbal": "063020010",
+    "Buluangan, Guimbal": "063020011",
+    "Burgos-Gengos, Guimbal": "063020012",
+    "Cabangcalan, Miagao": "063030025",
+    "Cabalaunan, Miagao": "063030024",
+    "Cabasi, Guimbal": "063020013",
+    "Cabubugan, Guimbal": "063020014",
+    "Cadoldolan, Miagao": "063030027",
+    "Cagbang, Miagao": "063030028",
+    "Caitib, Miagao": "063030029",
+    "Calagtangan, Miagao": "063030030",
+    "Calampitao, Guimbal": "063020015",
+    "Calampitao, Miagao": "063030031",
+    "Gotera, Guimbal": "063020020",
+    "Camangahan, Guimbal": "063020016",
+    "Cawayanan, Miagao": "063030033",
+    "Cavite, Miagao": "063030032",
+    "Igbugo, Miagao": "063030047",
+    "Cubay, Miagao": "063030034",
+    "Cubay Ubos, Miagao": "063030035",
+    "Dalije, Miagao": "063030036",
+    "Damilisan, Miagao": "063030037",
+    "Dawog, Miagao": "063030038",
+    "Diday, Miagao": "063030039",
+    "Dingle, Miagao": "063030040",
+    "Durog, Miagao": "063030041",
+    "Frantilla, Miagao": "063030042",
+    "Fundacion, Miagao": "063030043",
+    "Igsoligue, Miagao": "063030058",
+    "Generosa-Cristobal Colon, Guimbal": "063020017",
+    "Gerona-Gimeno, Guimbal": "063020018",
+    "Gines, Miagao": "063030044",
+    "Girado-Magsaysay, Guimbal": "063020019",
+    "Guibongan, Miagao": "063030045",
+    "Igcabidio, Miagao": "063030048",
+    "Igcabito-on, Miagao": "063030050",
+    "Igbita, Miagao": "063030046",
+    "Igdalaquit, Miagao": "063030052",
+    "Igcatambor, Miagao": "063030051",
+    "Igcocolo, Guimbal": "063020021",
+    "Igdulaca, Miagao": "063030053",
+    "Igpajo, Miagao": "063030054",
+    "Igpandan, Miagao": "063030055",
+    "Igpuro, Miagao": "063030056",
+    "Igpuro-Bariri, Miagao": "063030057",
+    "Igtuba, Miagao": "063030059",
+    "Libo-on Gonzales, Guimbal": "063020022",
+    "Ilog-ilog, Miagao": "063030060",
+    "Indag-an, Miagao": "063030061",
+    "Iyasan, Guimbal": "063020032",
+    "Kirayan Norte, Miagao": "063030062",
+    "Kirayan Sur, Miagao": "063030063",
+    "Kirayan Tacas, Miagao": "063030064",
+    "La Consolacion, Miagao": "063030065",
+    "Lacadon, Miagao": "063030066",
+    "Lanutan, Miagao": "063030067",
+    "Lubacan, Guimbal": "063020023",
+    "Lumangan, Miagao": "063030068",
+    "Mabayan, Miagao": "063030069",
+    "Maduyo, Miagao": "063030070",
+    "Malagyan, Miagao": "063030071",
+    "Mambatad, Miagao": "063030072",
+    "Maninila, Miagao": "063030073",
+    "Maricolcol, Miagao": "063030074",
+    "Maringyan, Miagao": "063030075",
+    "Naclub, Miagao": "063030078",
+    "Mat-y, Miagao": "063030076",
+    "Matalngon, Miagao": "063030077",
+    "Nahapay, Guimbal": "063020024",
+    "Nalundan, Guimbal": "063020025",
+    "Nam-o Norte, Miagao": "063030080",
+    "Nam-o Sur, Miagao": "063030079",
+    "Nanga, Guimbal": "063020026",
+    "Narat-an, Miagao": "063030082",
+    "Narorogan, Miagao": "063030083",
+    "Naulid, Miagao": "063030084",
+    "Nito-an Lupsag, Guimbal": "063020027",
+    "Olango, Miagao": "063030085",
+    "Ongyod, Miagao": "063030086",
+    "Onop, Miagao": "063030087",
+    "Oya-oy, Miagao": "063030005",
+    "Oyungan, Miagao": "063030088",
+    "Palaca, Miagao": "063030089",
+    "Taal, Miagao": "063030102",
+    "Particion, Guimbal": "063020028",
+    "Paro-on, Miagao": "063030090",
+    "Pescadores, Guimbal": "063020029",
+    "Potrido, Miagao": "063030091",
+    "Pudpud, Miagao": "063030092",
+    "Pungtod Monteclaro, Miagao": "063030093",
+    "Pungtod Naulid, Miagao": "063030094",
+    "Rizal-Tuguisan, Guimbal": "063020030"
+  },
+  "source_names": {
+    "Sag-on, Miagao": "Sag-on",
+    "San Fernando, Miagao": "San Fernando",
+    "San Jose, Miagao": "San Jose",
+    "San Rafael, Miagao": "San Rafael",
+    "Saring, Miagao": "Saring",
+    "Santa Rosa-Laguna, Guimbal": "Santa Rosa-Laguna",
+    "Tan-agan, Miagao": "Tan-agan",
+    "Sapa, Miagao": "Sapa (Miagao)",
+    "Sibucao, Miagao": "Sibucao",
+    "Sipitan-Badiang, Guimbal": "Sipitan-Badiang",
+    "Tabunacan, Miagao": "Tabunacan",
+    "Tacas, Miagao": "Tacas (Pob.)",
+    "Ticdalan, Miagao": "Ticdalan",
+    "Tambong, Miagao": "Tambong",
+    "Tigmarabo, Miagao": "Tigmarabo",
+    "Tatoy, Miagao": "Tatoy",
+    "Wayang, Miagao": "Wayang",
+    "Tig-amaga, Miagao": "Tig-amaga",
+    "Tig-Apog-Apog, Miagao": "Tig-Apog-Apog",
+    "Tigbagacay, Miagao": "Tigbagacay",
+    "Tigmalapad, Miagao": "Tigmalapad",
+    "Tiglawa, Miagao": "Tiglawa",
+    "To-og, Miagao": "To-og",
+    "Torreblanca-Blumentritt, Guimbal": "Torreblanca-Blumentritt (Pob.)",
+    "Tugura-ao, Miagao": "Tugura-ao",
+    "Tumagboc, Miagao": "Tumagboc",
+    "Ubos Ilawod, Miagao": "Ubos Ilawod (Pob.)",
+    "Ubos Ilaya, Miagao": "Ubos Ilaya (Pob.)",
+    "Valencia, Miagao": "Valencia",
+    "Agdum, Miagao": "Agdum",
+    "Aguiauan, Miagao": "Aguiauan",
+    "Alimodias, Miagao": "Alimodias",
+    "Anono-o, Guimbal": "Anono-o",
+    "Awang, Miagao": "Awang",
+    "Bacauan, Miagao": "Bacauan",
+    "Bacong, Guimbal": "Bacong",
+    "Bacolod, Miagao": "Bacolod",
+    "Bagumbayan, Miagao": "Bagumbayan",
+    "Bagumbayan Poblacion, Guimbal": "Bagumbayan Pob. (Bagumbayan-Granada)",
+    "Balantad-Carlos Fruto, Guimbal": "Balantad-Carlos Fruto (Pob.)",
+    "Banbanan, Miagao": "Banbanan",
+    "Banga, Miagao": "Banga",
+    "Bangladan, Miagao": "Bangladan",
+    "Banuyao, Miagao": "Banuyao",
+    "Baraclayan, Miagao": "Baraclayan",
+    "Baras, Guimbal": "Baras",
+    "Bariri, Miagao": "Bariri",
+    "Baybay Norte, Miagao": "Baybay Norte (Pob.)",
+    "Baybay Sur, Miagao": "Baybay Sur (Pob.)",
+    "Bugtong Naulid, Miagao": "Bugtong Naulid",
+    "Cabunotan, Miagao": "Cabunotan",
+    "Belen, Miagao": "Belen",
+    "Binanua-an, Guimbal": "Binanua-an",
+    "Bolho, Miagao": "Bolho (Pob.)",
+    "Bolocaue, Miagao": "Bolocaue",
+    "Bongol San Miguel, Guimbal": "Bongol San Miguel",
+    "Bongol San Vicente, Guimbal": "Bongol San Vicente",
+    "Buenavista Norte, Miagao": "Buenavista Norte",
+    "Buenavista Sur, Miagao": "Buenavista Sur",
+    "Bugtong Lumangan, Miagao": "Bugtong Lumangan",
+    "Bulad, Guimbal": "Bulad",
+    "Buluangan, Guimbal": "Buluangan",
+    "Burgos-Gengos, Guimbal": "Burgos-Gengos (Pob.)",
+    "Cabangcalan, Miagao": "Cabangcalan",
+    "Cabalaunan, Miagao": "Cabalaunan",
+    "Cabasi, Guimbal": "Cabasi",
+    "Cabubugan, Guimbal": "Cabubugan",
+    "Cadoldolan, Miagao": "Cadoldolan",
+    "Cagbang, Miagao": "Cagbang",
+    "Caitib, Miagao": "Caitib",
+    "Calagtangan, Miagao": "Calagtangan",
+    "Calampitao, Guimbal": "Calampitao",
+    "Calampitao, Miagao": "Calampitao",
+    "Gotera, Guimbal": "Gotera (Pob.)",
+    "Camangahan, Guimbal": "Camangahan",
+    "Cawayanan, Miagao": "Cawayanan",
+    "Cavite, Miagao": "Cavite",
+    "Igbugo, Miagao": "Igbugo",
+    "Cubay, Miagao": "Cubay",
+    "Cubay Ubos, Miagao": "Cubay Ubos",
+    "Dalije, Miagao": "Dalije",
+    "Damilisan, Miagao": "Damilisan",
+    "Dawog, Miagao": "Dawog",
+    "Diday, Miagao": "Diday",
+    "Dingle, Miagao": "Dingle",
+    "Durog, Miagao": "Durog",
+    "Frantilla, Miagao": "Frantilla",
+    "Fundacion, Miagao": "Fundacion",
+    "Igsoligue, Miagao": "Igsoligue",
+    "Generosa-Cristobal Colon, Guimbal": "Generosa-Cristobal Colon (Pob.)",
+    "Gerona-Gimeno, Guimbal": "Gerona-Gimeno (Pob.)",
+    "Gines, Miagao": "Gines",
+    "Girado-Magsaysay, Guimbal": "Girado-Magsaysay (Pob.)",
+    "Guibongan, Miagao": "Guibongan",
+    "Igcabidio, Miagao": "Igcabidio",
+    "Igcabito-on, Miagao": "Igcabito-on",
+    "Igbita, Miagao": "Igbita",
+    "Igdalaquit, Miagao": "Igdalaquit",
+    "Igcatambor, Miagao": "Igcatambor",
+    "Igcocolo, Guimbal": "Igcocolo",
+    "Igdulaca, Miagao": "Igdulaca",
+    "Igpajo, Miagao": "Igpajo",
+    "Igpandan, Miagao": "Igpandan",
+    "Igpuro, Miagao": "Igpuro",
+    "Igpuro-Bariri, Miagao": "Igpuro-Bariri",
+    "Igtuba, Miagao": "Igtuba",
+    "Libo-on Gonzales, Guimbal": "Libo-on Gonzales (Pob.)",
+    "Ilog-ilog, Miagao": "Ilog-ilog",
+    "Indag-an, Miagao": "Indag-an",
+    "Iyasan, Guimbal": "Iyasan",
+    "Kirayan Norte, Miagao": "Kirayan Norte",
+    "Kirayan Sur, Miagao": "Kirayan Sur",
+    "Kirayan Tacas, Miagao": "Kirayan Tacas",
+    "La Consolacion, Miagao": "La Consolacion",
+    "Lacadon, Miagao": "Lacadon",
+    "Lanutan, Miagao": "Lanutan",
+    "Lubacan, Guimbal": "Lubacan",
+    "Lumangan, Miagao": "Lumangan",
+    "Mabayan, Miagao": "Mabayan",
+    "Maduyo, Miagao": "Maduyo",
+    "Malagyan, Miagao": "Malagyan",
+    "Mambatad, Miagao": "Mambatad",
+    "Maninila, Miagao": "Maninila",
+    "Maricolcol, Miagao": "Maricolcol",
+    "Maringyan, Miagao": "Maringyan",
+    "Naclub, Miagao": "Naclub",
+    "Mat-y, Miagao": "Mat-y (Pob.)",
+    "Matalngon, Miagao": "Matalngon",
+    "Nahapay, Guimbal": "Nahapay",
+    "Nalundan, Guimbal": "Nalundan",
+    "Nam-o Norte, Miagao": "Nam-o Norte",
+    "Nam-o Sur, Miagao": "Nam-o Sur",
+    "Nanga, Guimbal": "Nanga",
+    "Narat-an, Miagao": "Narat-an",
+    "Narorogan, Miagao": "Narorogan",
+    "Naulid, Miagao": "Naulid",
+    "Nito-an Lupsag, Guimbal": "Nito-an Lupsag",
+    "Olango, Miagao": "Olango",
+    "Ongyod, Miagao": "Ongyod",
+    "Onop, Miagao": "Onop",
+    "Oya-oy, Miagao": "Oya-oy",
+    "Oyungan, Miagao": "Oyungan",
+    "Palaca, Miagao": "Palaca",
+    "Taal, Miagao": "Taal",
+    "Particion, Guimbal": "Particion",
+    "Paro-on, Miagao": "Paro-on",
+    "Pescadores, Guimbal": "Pescadores (Pob.)",
+    "Potrido, Miagao": "Potrido",
+    "Pudpud, Miagao": "Pudpud",
+    "Pungtod Monteclaro, Miagao": "Pungtod Monteclaro",
+    "Pungtod Naulid, Miagao": "Pungtod Naulid",
+    "Rizal-Tuguisan, Guimbal": "Rizal-Tuguisan (Pob.)"
+  },
+  "adjacency": {
+    "Agdum, Miagao": [
+      "Mabayan, Miagao",
+      "Maduyo, Miagao",
+      "Oya-oy, Miagao",
+      "Tigmarabo, Miagao"
+    ],
+    "Aguiauan, Miagao": [
+      "Banbanan, Miagao",
+      "Cagbang, Miagao",
+      "Cubay Ubos, Miagao",
+      "Cubay, Miagao",
+      "Diday, Miagao",
+      "Pungtod Monteclaro, Miagao",
+      "Taal, Miagao",
+      "Tambong, Miagao"
+    ],
+    "Alimodias, Miagao": [
+      "Cabalaunan, Miagao",
+      "Dalije, Miagao",
+      "Olango, Miagao",
+      "Onop, Miagao",
+      "Tig-amaga, Miagao"
+    ],
+    "Anono-o, Guimbal": [
+      "Baras, Guimbal",
+      "Bulad, Guimbal",
+      "Cabubugan, Guimbal",
+      "Iyasan, Guimbal",
+      "Lubacan, Guimbal",
+      "Particion, Guimbal"
+    ],
+    "Awang, Miagao": [
+      "Buenavista Sur, Miagao",
+      "Igcatambor, Miagao",
+      "Igsoligue, Miagao",
+      "Narorogan, Miagao"
+    ],
+    "Bacauan, Miagao": [
+      "Lumangan, Miagao",
+      "Malagyan, Miagao",
+      "Mambatad, Miagao",
+      "Mat-y, Miagao",
+      "Palaca, Miagao",
+      "Paro-on, Miagao"
+    ],
+    "Bacolod, Miagao": [
+      "Cabunotan, Miagao",
+      "Cawayanan, Miagao",
+      "Igdalaquit, Miagao",
+      "Igpandan, Miagao",
+      "Tig-Apog-Apog, Miagao",
+      "Tigbagacay, Miagao"
+    ],
+    "Bacong, Guimbal": [
+      "Bongol San Miguel, Guimbal",
+      "Camangahan, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Bagumbayan Poblacion, Guimbal": [
+      "Bongol San Vicente, Guimbal",
+      "Burgos-Gengos, Guimbal",
+      "Rizal-Tuguisan, Guimbal",
+      "Santa Rosa-Laguna, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Bagumbayan, Miagao": [
+      "Durog, Miagao",
+      "Igpuro, Miagao",
+      "Malagyan, Miagao",
+      "Mat-y, Miagao",
+      "Ubos Ilaya, Miagao"
+    ],
+    "Balantad-Carlos Fruto, Guimbal": [
+      "Burgos-Gengos, Guimbal",
+      "Girado-Magsaysay, Guimbal",
+      "Gotera, Guimbal",
+      "Igcocolo, Guimbal",
+      "Nanga, Guimbal",
+      "Rizal-Tuguisan, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Banbanan, Miagao": [
+      "Aguiauan, Miagao",
+      "Bolocaue, Miagao",
+      "Cagbang, Miagao"
+    ],
+    "Banga, Miagao": [
+      "Maricolcol, Miagao",
+      "Pungtod Monteclaro, Miagao",
+      "Sibucao, Miagao",
+      "Tiglawa, Miagao"
+    ],
+    "Bangladan, Miagao": [
+      "Bugtong Naulid, Miagao",
+      "Caitib, Miagao",
+      "Calampitao, Guimbal",
+      "Calampitao, Miagao",
+      "Pungtod Naulid, Miagao",
+      "Tatoy, Miagao",
+      "Valencia, Miagao"
+    ],
+    "Banuyao, Miagao": [
+      "Kirayan Norte, Miagao",
+      "Kirayan Tacas, Miagao",
+      "Naulid, Miagao",
+      "Tatoy, Miagao",
+      "Valencia, Miagao"
+    ],
+    "Baraclayan, Miagao": [
+      "Bugtong Naulid, Miagao",
+      "Caitib, Miagao",
+      "Dawog, Miagao",
+      "Durog, Miagao",
+      "Maricolcol, Miagao"
+    ],
+    "Baras, Guimbal": [
+      "Anono-o, Guimbal",
+      "Cabasi, Guimbal",
+      "Cabubugan, Guimbal",
+      "Particion, Guimbal",
+      "Santa Rosa-Laguna, Guimbal"
+    ],
+    "Bariri, Miagao": [
+      "Igbita, Miagao",
+      "Igpuro-Bariri, Miagao",
+      "La Consolacion, Miagao",
+      "Saring, Miagao"
+    ],
+    "Baybay Norte, Miagao": [
+      "Baybay Sur, Miagao",
+      "Guibongan, Miagao",
+      "Igtuba, Miagao",
+      "Tacas, Miagao",
+      "Ubos Ilawod, Miagao"
+    ],
+    "Baybay Sur, Miagao": [
+      "Baybay Norte, Miagao",
+      "Bolho, Miagao",
+      "Sapa, Miagao",
+      "Tacas, Miagao"
+    ],
+    "Belen, Miagao": [
+      "Frantilla, Miagao",
+      "San Jose, Miagao",
+      "Saring, Miagao",
+      "Tigmalapad, Miagao",
+      "Wayang, Miagao"
+    ],
+    "Binanua-an, Guimbal": [
+      "Bongol San Miguel, Guimbal",
+      "Camangahan, Guimbal",
+      "Nahapay, Guimbal"
+    ],
+    "Bolho, Miagao": [
+      "Baybay Sur, Miagao",
+      "Mambatad, Miagao",
+      "Sapa, Miagao",
+      "Tacas, Miagao"
+    ],
+    "Bolocaue, Miagao": [
+      "Banbanan, Miagao",
+      "Cagbang, Miagao",
+      "Taal, Miagao",
+      "Wayang, Miagao"
+    ],
+    "Bongol San Miguel, Guimbal": [
+      "Bacong, Guimbal",
+      "Binanua-an, Guimbal",
+      "Buluangan, Guimbal",
+      "Camangahan, Guimbal",
+      "Nahapay, Guimbal"
+    ],
+    "Bongol San Vicente, Guimbal": [
+      "Bagumbayan Poblacion, Guimbal",
+      "Rizal-Tuguisan, Guimbal",
+      "Santa Rosa-Laguna, Guimbal"
+    ],
+    "Buenavista Norte, Miagao": [
+      "Naclub, Miagao",
+      "Nam-o Norte, Miagao",
+      "San Fernando, Miagao",
+      "Tabunacan, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "Buenavista Sur, Miagao": [
+      "Awang, Miagao",
+      "Igcatambor, Miagao",
+      "Igdulaca, Miagao"
+    ],
+    "Bugtong Lumangan, Miagao": [
+      "Diday, Miagao",
+      "Igpajo, Miagao",
+      "Lumangan, Miagao",
+      "Paro-on, Miagao",
+      "Sag-on, Miagao"
+    ],
+    "Bugtong Naulid, Miagao": [
+      "Bangladan, Miagao",
+      "Baraclayan, Miagao",
+      "Caitib, Miagao",
+      "Durog, Miagao",
+      "Pungtod Naulid, Miagao"
+    ],
+    "Bulad, Guimbal": [
+      "Anono-o, Guimbal",
+      "Iyasan, Guimbal",
+      "Lubacan, Guimbal",
+      "Nito-an Lupsag, Guimbal"
+    ],
+    "Buluangan, Guimbal": [
+      "Bongol San Miguel, Guimbal",
+      "Nahapay, Guimbal"
+    ],
+    "Burgos-Gengos, Guimbal": [
+      "Bagumbayan Poblacion, Guimbal",
+      "Balantad-Carlos Fruto, Guimbal",
+      "Gerona-Gimeno, Guimbal",
+      "Girado-Magsaysay, Guimbal",
+      "Gotera, Guimbal",
+      "Rizal-Tuguisan, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Cabalaunan, Miagao": [
+      "Alimodias, Miagao",
+      "Cadoldolan, Miagao",
+      "Onop, Miagao",
+      "Tig-amaga, Miagao"
+    ],
+    "Cabangcalan, Miagao": [
+      "Igdalaquit, Miagao",
+      "Naclub, Miagao",
+      "Ticdalan, Miagao",
+      "Tigbagacay, Miagao"
+    ],
+    "Cabasi, Guimbal": [
+      "Baras, Guimbal",
+      "Santa Rosa-Laguna, Guimbal"
+    ],
+    "Cabubugan, Guimbal": [
+      "Anono-o, Guimbal",
+      "Baras, Guimbal",
+      "Iyasan, Guimbal",
+      "Nalundan, Guimbal"
+    ],
+    "Cabunotan, Miagao": [
+      "Bacolod, Miagao",
+      "Igpandan, Miagao",
+      "Olango, Miagao",
+      "Pudpud, Miagao",
+      "Tig-Apog-Apog, Miagao"
+    ],
+    "Cadoldolan, Miagao": [
+      "Cabalaunan, Miagao",
+      "Matalngon, Miagao",
+      "Onop, Miagao",
+      "Tig-amaga, Miagao",
+      "To-og, Miagao"
+    ],
+    "Cagbang, Miagao": [
+      "Aguiauan, Miagao",
+      "Banbanan, Miagao",
+      "Bolocaue, Miagao",
+      "Frantilla, Miagao",
+      "Saring, Miagao",
+      "Tumagboc, Miagao"
+    ],
+    "Caitib, Miagao": [
+      "Bangladan, Miagao",
+      "Baraclayan, Miagao",
+      "Bugtong Naulid, Miagao",
+      "Maricolcol, Miagao"
+    ],
+    "Calagtangan, Miagao": [
+      "Diday, Miagao",
+      "Naclub, Miagao",
+      "Sag-on, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "Calampitao, Guimbal": [
+      "Bangladan, Miagao",
+      "Calampitao, Miagao",
+      "Iyasan, Guimbal",
+      "Nalundan, Guimbal"
+    ],
+    "Calampitao, Miagao": [
+      "Bangladan, Miagao",
+      "Calampitao, Guimbal",
+      "Gines, Miagao",
+      "Tatoy, Miagao"
+    ],
+    "Camangahan, Guimbal": [
+      "Bacong, Guimbal",
+      "Binanua-an, Guimbal",
+      "Bongol San Miguel, Guimbal",
+      "Igcocolo, Guimbal",
+      "Nahapay, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Cavite, Miagao": [
+      "Pungtod Monteclaro, Miagao",
+      "Taal, Miagao",
+      "Tiglawa, Miagao"
+    ],
+    "Cawayanan, Miagao": [
+      "Bacolod, Miagao",
+      "Igbugo, Miagao",
+      "Igcabito-on, Miagao",
+      "Igdalaquit, Miagao",
+      "Igpandan, Miagao"
+    ],
+    "Cubay Ubos, Miagao": [
+      "Aguiauan, Miagao",
+      "Cubay, Miagao",
+      "Dawog, Miagao",
+      "Pungtod Monteclaro, Miagao",
+      "Sibucao, Miagao",
+      "Tan-agan, Miagao"
+    ],
+    "Cubay, Miagao": [
+      "Aguiauan, Miagao",
+      "Cubay Ubos, Miagao",
+      "Diday, Miagao",
+      "Tambong, Miagao",
+      "Tan-agan, Miagao"
+    ],
+    "Dalije, Miagao": [
+      "Alimodias, Miagao",
+      "Igcabito-on, Miagao",
+      "Igpandan, Miagao",
+      "Igsoligue, Miagao",
+      "Olango, Miagao"
+    ],
+    "Damilisan, Miagao": [
+      "Oyungan, Miagao",
+      "Potrido, Miagao",
+      "Tabunacan, Miagao"
+    ],
+    "Dawog, Miagao": [
+      "Baraclayan, Miagao",
+      "Cubay Ubos, Miagao",
+      "Durog, Miagao",
+      "Indag-an, Miagao",
+      "Maricolcol, Miagao",
+      "Sibucao, Miagao",
+      "Tan-agan, Miagao"
+    ],
+    "Diday, Miagao": [
+      "Aguiauan, Miagao",
+      "Bugtong Lumangan, Miagao",
+      "Calagtangan, Miagao",
+      "Cubay, Miagao",
+      "Naclub, Miagao",
+      "Paro-on, Miagao",
+      "Sag-on, Miagao",
+      "Tambong, Miagao",
+      "Tumagboc, Miagao"
+    ],
+    "Dingle, Miagao": [
+      "Gines, Miagao",
+      "Maninila, Miagao",
+      "Tatoy, Miagao"
+    ],
+    "Durog, Miagao": [
+      "Bagumbayan, Miagao",
+      "Baraclayan, Miagao",
+      "Bugtong Naulid, Miagao",
+      "Dawog, Miagao",
+      "Igpuro, Miagao",
+      "Indag-an, Miagao",
+      "Kirayan Tacas, Miagao",
+      "Malagyan, Miagao",
+      "Pungtod Naulid, Miagao"
+    ],
+    "Frantilla, Miagao": [
+      "Belen, Miagao",
+      "Cagbang, Miagao",
+      "Saring, Miagao",
+      "Wayang, Miagao"
+    ],
+    "Fundacion, Miagao": [
+      "Igcabidio, Miagao",
+      "Oyungan, Miagao",
+      "Potrido, Miagao",
+      "San Fernando, Miagao",
+      "Tabunacan, Miagao"
+    ],
+    "Generosa-Cristobal Colon, Guimbal": [
+      "Pescadores, Guimbal",
+      "Rizal-Tuguisan, Guimbal",
+      "Torreblanca-Blumentritt, Guimbal"
+    ],
+    "Gerona-Gimeno, Guimbal": [
+      "Burgos-Gengos, Guimbal",
+      "Gotera, Guimbal",
+      "Libo-on Gonzales, Guimbal",
+      "Pescadores, Guimbal",
+      "Rizal-Tuguisan, Guimbal",
+      "Torreblanca-Blumentritt, Guimbal"
+    ],
+    "Gines, Miagao": [
+      "Calampitao, Miagao",
+      "Dingle, Miagao"
+    ],
+    "Girado-Magsaysay, Guimbal": [
+      "Balantad-Carlos Fruto, Guimbal",
+      "Burgos-Gengos, Guimbal",
+      "Gotera, Guimbal",
+      "Libo-on Gonzales, Guimbal",
+      "Rizal-Tuguisan, Guimbal"
+    ],
+    "Gotera, Guimbal": [
+      "Balantad-Carlos Fruto, Guimbal",
+      "Burgos-Gengos, Guimbal",
+      "Gerona-Gimeno, Guimbal",
+      "Girado-Magsaysay, Guimbal",
+      "Libo-on Gonzales, Guimbal"
+    ],
+    "Guibongan, Miagao": [
+      "Baybay Norte, Miagao",
+      "Igtuba, Miagao",
+      "Kirayan Sur, Miagao"
+    ],
+    "Igbita, Miagao": [
+      "Bariri, Miagao",
+      "La Consolacion, Miagao",
+      "Matalngon, Miagao",
+      "Tigmalapad, Miagao",
+      "To-og, Miagao"
+    ],
+    "Igbugo, Miagao": [
+      "Cawayanan, Miagao",
+      "Igcabito-on, Miagao",
+      "Igsoligue, Miagao",
+      "Naclub, Miagao",
+      "Nam-o Norte, Miagao",
+      "Narorogan, Miagao"
+    ],
+    "Igcabidio, Miagao": [
+      "Fundacion, Miagao",
+      "Ilog-ilog, Miagao",
+      "Lanutan, Miagao",
+      "Nam-o Sur, Miagao",
+      "Oyungan, Miagao",
+      "San Fernando, Miagao"
+    ],
+    "Igcabito-on, Miagao": [
+      "Cawayanan, Miagao",
+      "Dalije, Miagao",
+      "Igbugo, Miagao",
+      "Igpandan, Miagao",
+      "Igsoligue, Miagao"
+    ],
+    "Igcatambor, Miagao": [
+      "Awang, Miagao",
+      "Buenavista Sur, Miagao",
+      "Igdulaca, Miagao",
+      "Narorogan, Miagao"
+    ],
+    "Igcocolo, Guimbal": [
+      "Balantad-Carlos Fruto, Guimbal",
+      "Camangahan, Guimbal",
+      "Nanga, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Igdalaquit, Miagao": [
+      "Bacolod, Miagao",
+      "Cabangcalan, Miagao",
+      "Cawayanan, Miagao",
+      "Naclub, Miagao",
+      "Tigbagacay, Miagao"
+    ],
+    "Igdulaca, Miagao": [
+      "Buenavista Sur, Miagao",
+      "Igcatambor, Miagao",
+      "Ilog-ilog, Miagao",
+      "Lacadon, Miagao",
+      "Lanutan, Miagao",
+      "Narorogan, Miagao"
+    ],
+    "Igpajo, Miagao": [
+      "Bugtong Lumangan, Miagao",
+      "Lumangan, Miagao",
+      "Sag-on, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "Igpandan, Miagao": [
+      "Bacolod, Miagao",
+      "Cabunotan, Miagao",
+      "Cawayanan, Miagao",
+      "Dalije, Miagao",
+      "Igcabito-on, Miagao"
+    ],
+    "Igpuro, Miagao": [
+      "Bagumbayan, Miagao",
+      "Durog, Miagao",
+      "Igtuba, Miagao",
+      "Kirayan Tacas, Miagao",
+      "Ubos Ilaya, Miagao"
+    ],
+    "Igpuro-Bariri, Miagao": [
+      "Bariri, Miagao",
+      "La Consolacion, Miagao",
+      "Pudpud, Miagao",
+      "Ticdalan, Miagao",
+      "Tigbagacay, Miagao"
+    ],
+    "Igsoligue, Miagao": [
+      "Awang, Miagao",
+      "Dalije, Miagao",
+      "Igbugo, Miagao",
+      "Igcabito-on, Miagao",
+      "Narorogan, Miagao"
+    ],
+    "Igtuba, Miagao": [
+      "Baybay Norte, Miagao",
+      "Guibongan, Miagao",
+      "Igpuro, Miagao",
+      "Kirayan Sur, Miagao",
+      "Kirayan Tacas, Miagao",
+      "Ubos Ilawod, Miagao"
+    ],
+    "Ilog-ilog, Miagao": [
+      "Igcabidio, Miagao",
+      "Igdulaca, Miagao",
+      "Lanutan, Miagao",
+      "Nam-o Norte, Miagao",
+      "Narorogan, Miagao"
+    ],
+    "Indag-an, Miagao": [
+      "Dawog, Miagao",
+      "Durog, Miagao",
+      "Malagyan, Miagao",
+      "Paro-on, Miagao",
+      "Tan-agan, Miagao"
+    ],
+    "Iyasan, Guimbal": [
+      "Anono-o, Guimbal",
+      "Bulad, Guimbal",
+      "Cabubugan, Guimbal",
+      "Calampitao, Guimbal",
+      "Nalundan, Guimbal",
+      "Nito-an Lupsag, Guimbal"
+    ],
+    "Kirayan Norte, Miagao": [
+      "Banuyao, Miagao",
+      "Kirayan Sur, Miagao",
+      "Kirayan Tacas, Miagao"
+    ],
+    "Kirayan Sur, Miagao": [
+      "Guibongan, Miagao",
+      "Igtuba, Miagao",
+      "Kirayan Norte, Miagao",
+      "Kirayan Tacas, Miagao"
+    ],
+    "Kirayan Tacas, Miagao": [
+      "Banuyao, Miagao",
+      "Durog, Miagao",
+      "Igpuro, Miagao",
+      "Igtuba, Miagao",
+      "Kirayan Norte, Miagao",
+      "Kirayan Sur, Miagao",
+      "Pungtod Naulid, Miagao",
+      "Valencia, Miagao"
+    ],
+    "La Consolacion, Miagao": [
+      "Bariri, Miagao",
+      "Igbita, Miagao",
+      "Igpuro-Bariri, Miagao",
+      "Matalngon, Miagao",
+      "Pudpud, Miagao",
+      "Tig-amaga, Miagao"
+    ],
+    "Lacadon, Miagao": [
+      "Igdulaca, Miagao",
+      "Lanutan, Miagao",
+      "Narat-an, Miagao",
+      "San Rafael, Miagao"
+    ],
+    "Lanutan, Miagao": [
+      "Igcabidio, Miagao",
+      "Igdulaca, Miagao",
+      "Ilog-ilog, Miagao",
+      "Lacadon, Miagao",
+      "Maringyan, Miagao",
+      "Oyungan, Miagao",
+      "San Rafael, Miagao"
+    ],
+    "Libo-on Gonzales, Guimbal": [
+      "Gerona-Gimeno, Guimbal",
+      "Girado-Magsaysay, Guimbal",
+      "Gotera, Guimbal",
+      "Rizal-Tuguisan, Guimbal"
+    ],
+    "Lubacan, Guimbal": [
+      "Anono-o, Guimbal",
+      "Bulad, Guimbal",
+      "Nito-an Lupsag, Guimbal",
+      "Particion, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Lumangan, Miagao": [
+      "Bacauan, Miagao",
+      "Bugtong Lumangan, Miagao",
+      "Igpajo, Miagao",
+      "Palaca, Miagao",
+      "Paro-on, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "Mabayan, Miagao": [
+      "Agdum, Miagao",
+      "Maduyo, Miagao",
+      "Ongyod, Miagao",
+      "San Jose, Miagao",
+      "Tigmalapad, Miagao",
+      "Tigmarabo, Miagao"
+    ],
+    "Maduyo, Miagao": [
+      "Agdum, Miagao",
+      "Mabayan, Miagao",
+      "Oya-oy, Miagao",
+      "San Jose, Miagao",
+      "Taal, Miagao",
+      "Tiglawa, Miagao",
+      "Wayang, Miagao"
+    ],
+    "Malagyan, Miagao": [
+      "Bacauan, Miagao",
+      "Bagumbayan, Miagao",
+      "Durog, Miagao",
+      "Indag-an, Miagao",
+      "Mat-y, Miagao",
+      "Paro-on, Miagao"
+    ],
+    "Mambatad, Miagao": [
+      "Bacauan, Miagao",
+      "Bolho, Miagao",
+      "Mat-y, Miagao",
+      "Sapa, Miagao",
+      "Tacas, Miagao"
+    ],
+    "Maninila, Miagao": [
+      "Dingle, Miagao",
+      "Naulid, Miagao",
+      "Tatoy, Miagao"
+    ],
+    "Maricolcol, Miagao": [
+      "Banga, Miagao",
+      "Baraclayan, Miagao",
+      "Caitib, Miagao",
+      "Dawog, Miagao",
+      "Sibucao, Miagao"
+    ],
+    "Maringyan, Miagao": [
+      "Lanutan, Miagao",
+      "San Rafael, Miagao"
+    ],
+    "Mat-y, Miagao": [
+      "Bacauan, Miagao",
+      "Bagumbayan, Miagao",
+      "Malagyan, Miagao",
+      "Mambatad, Miagao",
+      "Tacas, Miagao",
+      "Ubos Ilaya, Miagao"
+    ],
+    "Matalngon, Miagao": [
+      "Cadoldolan, Miagao",
+      "Igbita, Miagao",
+      "La Consolacion, Miagao",
+      "Tig-amaga, Miagao",
+      "To-og, Miagao"
+    ],
+    "Naclub, Miagao": [
+      "Buenavista Norte, Miagao",
+      "Cabangcalan, Miagao",
+      "Calagtangan, Miagao",
+      "Diday, Miagao",
+      "Igbugo, Miagao",
+      "Igdalaquit, Miagao",
+      "Nam-o Norte, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "Nahapay, Guimbal": [
+      "Binanua-an, Guimbal",
+      "Bongol San Miguel, Guimbal",
+      "Buluangan, Guimbal",
+      "Camangahan, Guimbal"
+    ],
+    "Nalundan, Guimbal": [
+      "Cabubugan, Guimbal",
+      "Calampitao, Guimbal",
+      "Iyasan, Guimbal"
+    ],
+    "Nam-o Norte, Miagao": [
+      "Buenavista Norte, Miagao",
+      "Igbugo, Miagao",
+      "Ilog-ilog, Miagao",
+      "Naclub, Miagao",
+      "Nam-o Sur, Miagao",
+      "Narorogan, Miagao",
+      "San Fernando, Miagao"
+    ],
+    "Nam-o Sur, Miagao": [
+      "Igcabidio, Miagao",
+      "Nam-o Norte, Miagao",
+      "San Fernando, Miagao"
+    ],
+    "Nanga, Guimbal": [
+      "Balantad-Carlos Fruto, Guimbal",
+      "Igcocolo, Guimbal",
+      "Rizal-Tuguisan, Guimbal"
+    ],
+    "Narat-an, Miagao": [
+      "Lacadon, Miagao",
+      "San Rafael, Miagao"
+    ],
+    "Narorogan, Miagao": [
+      "Awang, Miagao",
+      "Igbugo, Miagao",
+      "Igcatambor, Miagao",
+      "Igdulaca, Miagao",
+      "Igsoligue, Miagao",
+      "Ilog-ilog, Miagao",
+      "Nam-o Norte, Miagao"
+    ],
+    "Naulid, Miagao": [
+      "Banuyao, Miagao",
+      "Maninila, Miagao",
+      "Tatoy, Miagao"
+    ],
+    "Nito-an Lupsag, Guimbal": [
+      "Bulad, Guimbal",
+      "Iyasan, Guimbal",
+      "Lubacan, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Olango, Miagao": [
+      "Alimodias, Miagao",
+      "Cabunotan, Miagao",
+      "Dalije, Miagao",
+      "Pudpud, Miagao",
+      "Tig-amaga, Miagao"
+    ],
+    "Ongyod, Miagao": [
+      "Mabayan, Miagao",
+      "Onop, Miagao",
+      "Tigmarabo, Miagao",
+      "To-og, Miagao"
+    ],
+    "Onop, Miagao": [
+      "Alimodias, Miagao",
+      "Cabalaunan, Miagao",
+      "Cadoldolan, Miagao",
+      "Ongyod, Miagao",
+      "To-og, Miagao"
+    ],
+    "Oya-oy, Miagao": [
+      "Agdum, Miagao",
+      "Maduyo, Miagao",
+      "Tigmarabo, Miagao"
+    ],
+    "Oyungan, Miagao": [
+      "Damilisan, Miagao",
+      "Fundacion, Miagao",
+      "Igcabidio, Miagao",
+      "Lanutan, Miagao",
+      "Potrido, Miagao"
+    ],
+    "Palaca, Miagao": [
+      "Bacauan, Miagao",
+      "Lumangan, Miagao",
+      "Tabunacan, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "Paro-on, Miagao": [
+      "Bacauan, Miagao",
+      "Bugtong Lumangan, Miagao",
+      "Diday, Miagao",
+      "Indag-an, Miagao",
+      "Lumangan, Miagao",
+      "Malagyan, Miagao",
+      "Tan-agan, Miagao"
+    ],
+    "Particion, Guimbal": [
+      "Anono-o, Guimbal",
+      "Baras, Guimbal",
+      "Lubacan, Guimbal",
+      "Santa Rosa-Laguna, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Pescadores, Guimbal": [
+      "Generosa-Cristobal Colon, Guimbal",
+      "Gerona-Gimeno, Guimbal",
+      "Torreblanca-Blumentritt, Guimbal"
+    ],
+    "Potrido, Miagao": [
+      "Damilisan, Miagao",
+      "Fundacion, Miagao",
+      "Oyungan, Miagao",
+      "Tabunacan, Miagao"
+    ],
+    "Pudpud, Miagao": [
+      "Cabunotan, Miagao",
+      "Igpuro-Bariri, Miagao",
+      "La Consolacion, Miagao",
+      "Olango, Miagao",
+      "Tig-Apog-Apog, Miagao",
+      "Tig-amaga, Miagao"
+    ],
+    "Pungtod Monteclaro, Miagao": [
+      "Aguiauan, Miagao",
+      "Banga, Miagao",
+      "Cavite, Miagao",
+      "Cubay Ubos, Miagao",
+      "Sibucao, Miagao",
+      "Taal, Miagao",
+      "Tiglawa, Miagao"
+    ],
+    "Pungtod Naulid, Miagao": [
+      "Bangladan, Miagao",
+      "Bugtong Naulid, Miagao",
+      "Durog, Miagao",
+      "Kirayan Tacas, Miagao",
+      "Valencia, Miagao"
+    ],
+    "Rizal-Tuguisan, Guimbal": [
+      "Bagumbayan Poblacion, Guimbal",
+      "Balantad-Carlos Fruto, Guimbal",
+      "Bongol San Vicente, Guimbal",
+      "Burgos-Gengos, Guimbal",
+      "Generosa-Cristobal Colon, Guimbal",
+      "Gerona-Gimeno, Guimbal",
+      "Girado-Magsaysay, Guimbal",
+      "Libo-on Gonzales, Guimbal",
+      "Nanga, Guimbal",
+      "Torreblanca-Blumentritt, Guimbal"
+    ],
+    "Sag-on, Miagao": [
+      "Bugtong Lumangan, Miagao",
+      "Calagtangan, Miagao",
+      "Diday, Miagao",
+      "Igpajo, Miagao",
+      "Tugura-ao, Miagao"
+    ],
+    "San Fernando, Miagao": [
+      "Buenavista Norte, Miagao",
+      "Fundacion, Miagao",
+      "Igcabidio, Miagao",
+      "Nam-o Norte, Miagao",
+      "Nam-o Sur, Miagao"
+    ],
+    "San Jose, Miagao": [
+      "Belen, Miagao",
+      "Mabayan, Miagao",
+      "Maduyo, Miagao",
+      "Tigmalapad, Miagao",
+      "Wayang, Miagao"
+    ],
+    "San Rafael, Miagao": [
+      "Lacadon, Miagao",
+      "Lanutan, Miagao",
+      "Maringyan, Miagao",
+      "Narat-an, Miagao"
+    ],
+    "Santa Rosa-Laguna, Guimbal": [
+      "Bagumbayan Poblacion, Guimbal",
+      "Baras, Guimbal",
+      "Bongol San Vicente, Guimbal",
+      "Cabasi, Guimbal",
+      "Particion, Guimbal",
+      "Sipitan-Badiang, Guimbal"
+    ],
+    "Sapa, Miagao": [
+      "Baybay Sur, Miagao",
+      "Bolho, Miagao",
+      "Mambatad, Miagao"
+    ],
+    "Saring, Miagao": [
+      "Bariri, Miagao",
+      "Belen, Miagao",
+      "Cagbang, Miagao",
+      "Frantilla, Miagao",
+      "Ticdalan, Miagao",
+      "Tigmalapad, Miagao",
+      "Tumagboc, Miagao"
+    ],
+    "Sibucao, Miagao": [
+      "Banga, Miagao",
+      "Cubay Ubos, Miagao",
+      "Dawog, Miagao",
+      "Maricolcol, Miagao",
+      "Pungtod Monteclaro, Miagao"
+    ],
+    "Sipitan-Badiang, Guimbal": [
+      "Bacong, Guimbal",
+      "Bagumbayan Poblacion, Guimbal",
+      "Balantad-Carlos Fruto, Guimbal",
+      "Burgos-Gengos, Guimbal",
+      "Camangahan, Guimbal",
+      "Igcocolo, Guimbal",
+      "Lubacan, Guimbal",
+      "Nito-an Lupsag, Guimbal",
+      "Particion, Guimbal",
+      "Santa Rosa-Laguna, Guimbal"
+    ],
+    "Taal, Miagao": [
+      "Aguiauan, Miagao",
+      "Bolocaue, Miagao",
+      "Cavite, Miagao",
+      "Maduyo, Miagao",
+      "Pungtod Monteclaro, Miagao",
+      "Tiglawa, Miagao",
+      "Wayang, Miagao"
+    ],
+    "Tabunacan, Miagao": [
+      "Buenavista Norte, Miagao",
+      "Damilisan, Miagao",
+      "Fundacion, Miagao",
+      "Palaca, Miagao",
+      "Potrido, Miagao"
+    ],
+    "Tacas, Miagao": [
+      "Baybay Norte, Miagao",
+      "Baybay Sur, Miagao",
+      "Bolho, Miagao",
+      "Mambatad, Miagao",
+      "Mat-y, Miagao",
+      "Ubos Ilawod, Miagao",
+      "Ubos Ilaya, Miagao"
+    ],
+    "Tambong, Miagao": [
+      "Aguiauan, Miagao",
+      "Cubay, Miagao",
+      "Diday, Miagao"
+    ],
+    "Tan-agan, Miagao": [
+      "Cubay Ubos, Miagao",
+      "Cubay, Miagao",
+      "Dawog, Miagao",
+      "Indag-an, Miagao",
+      "Paro-on, Miagao"
+    ],
+    "Tatoy, Miagao": [
+      "Bangladan, Miagao",
+      "Banuyao, Miagao",
+      "Calampitao, Miagao",
+      "Dingle, Miagao",
+      "Maninila, Miagao",
+      "Naulid, Miagao",
+      "Valencia, Miagao"
+    ],
+    "Ticdalan, Miagao": [
+      "Cabangcalan, Miagao",
+      "Igpuro-Bariri, Miagao",
+      "Saring, Miagao",
+      "Tumagboc, Miagao"
+    ],
+    "Tig-Apog-Apog, Miagao": [
+      "Bacolod, Miagao",
+      "Cabunotan, Miagao",
+      "Pudpud, Miagao",
+      "Tigbagacay, Miagao"
+    ],
+    "Tig-amaga, Miagao": [
+      "Alimodias, Miagao",
+      "Cabalaunan, Miagao",
+      "Cadoldolan, Miagao",
+      "La Consolacion, Miagao",
+      "Matalngon, Miagao",
+      "Olango, Miagao",
+      "Pudpud, Miagao"
+    ],
+    "Tigbagacay, Miagao": [
+      "Bacolod, Miagao",
+      "Cabangcalan, Miagao",
+      "Igdalaquit, Miagao",
+      "Igpuro-Bariri, Miagao",
+      "Tig-Apog-Apog, Miagao"
+    ],
+    "Tiglawa, Miagao": [
+      "Banga, Miagao",
+      "Cavite, Miagao",
+      "Maduyo, Miagao",
+      "Pungtod Monteclaro, Miagao",
+      "Taal, Miagao"
+    ],
+    "Tigmalapad, Miagao": [
+      "Belen, Miagao",
+      "Igbita, Miagao",
+      "Mabayan, Miagao",
+      "San Jose, Miagao",
+      "Saring, Miagao",
+      "To-og, Miagao"
+    ],
+    "Tigmarabo, Miagao": [
+      "Agdum, Miagao",
+      "Mabayan, Miagao",
+      "Ongyod, Miagao",
+      "Oya-oy, Miagao"
+    ],
+    "To-og, Miagao": [
+      "Cadoldolan, Miagao",
+      "Igbita, Miagao",
+      "Matalngon, Miagao",
+      "Ongyod, Miagao",
+      "Onop, Miagao",
+      "Tigmalapad, Miagao"
+    ],
+    "Torreblanca-Blumentritt, Guimbal": [
+      "Generosa-Cristobal Colon, Guimbal",
+      "Gerona-Gimeno, Guimbal",
+      "Pescadores, Guimbal",
+      "Rizal-Tuguisan, Guimbal"
+    ],
+    "Tugura-ao, Miagao": [
+      "Buenavista Norte, Miagao",
+      "Calagtangan, Miagao",
+      "Igpajo, Miagao",
+      "Lumangan, Miagao",
+      "Naclub, Miagao",
+      "Palaca, Miagao",
+      "Sag-on, Miagao"
+    ],
+    "Tumagboc, Miagao": [
+      "Cagbang, Miagao",
+      "Diday, Miagao",
+      "Saring, Miagao",
+      "Ticdalan, Miagao"
+    ],
+    "Ubos Ilawod, Miagao": [
+      "Baybay Norte, Miagao",
+      "Igtuba, Miagao",
+      "Tacas, Miagao",
+      "Ubos Ilaya, Miagao"
+    ],
+    "Ubos Ilaya, Miagao": [
+      "Bagumbayan, Miagao",
+      "Igpuro, Miagao",
+      "Mat-y, Miagao",
+      "Tacas, Miagao",
+      "Ubos Ilawod, Miagao"
+    ],
+    "Valencia, Miagao": [
+      "Bangladan, Miagao",
+      "Banuyao, Miagao",
+      "Kirayan Tacas, Miagao",
+      "Pungtod Naulid, Miagao",
+      "Tatoy, Miagao"
+    ],
+    "Wayang, Miagao": [
+      "Belen, Miagao",
+      "Bolocaue, Miagao",
+      "Frantilla, Miagao",
+      "Maduyo, Miagao",
+      "San Jose, Miagao",
+      "Taal, Miagao"
+    ]
+  }
+}

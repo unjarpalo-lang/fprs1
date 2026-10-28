@@ -1,0 +1,5 @@
+# Nothing in this folder should ever be served over HTTP — it holds the
+# Firebase service-account private key. This is a defense-in-depth backstop;
+# the real fix is that this folder lives outside any web-servable path in
+# production. Requires Apache 2.4+ (mod_authz_core).
+Require all denied

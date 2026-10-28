@@ -1,0 +1,6 @@
+# Parlor licenses may be up to 40 MiB; leave room for multipart fields.
+# Individual package and inventory limits remain enforced by their handlers.
+<IfModule php_module>
+    php_value upload_max_filesize 40M
+    php_value post_max_size 48M
+</IfModule>

@@ -1,0 +1,23 @@
+# User-uploaded files only — never execute anything here, regardless of
+# extension. This is the backstop even if a validation bug elsewhere lets a
+# disguised script through with a .php-family extension.
+<FilesMatch "\.(php|phtml|php\d|pht|phar|cgi|pl|py|asp|aspx|sh)$">
+    Require all denied
+</FilesMatch>
+
+# Private verification documents — client valid IDs, director licences and
+# parlor business licences. These are personal data and must never be
+# readable just by knowing the URL. Admins view them through
+# admin/serve_document.php, which checks the session first and reads the file
+# from disk, so denying direct HTTP access here costs nothing.
+#
+# Package, inclusion and inventory images are deliberately NOT listed: they
+# are public catalogue content and are loaded straight from <img> tags.
+<FilesMatch "^(valid_id|license|parlor_license|id)_">
+    Require all denied
+</FilesMatch>
+
+# Anything that is not an image or PDF has no business being fetched here.
+<FilesMatch "\.(docx?|xlsx?|pptx?|txt|csv|json|sql|zip)$">
+    Require all denied
+</FilesMatch>

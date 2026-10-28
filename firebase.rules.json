@@ -1,0 +1,39 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "providers": {
+      "$providerId": {
+        ".read": "auth != null",
+        ".write": false
+      }
+    },
+
+    "inventory": {
+      "$providerId": {
+        ".read": "auth != null",
+        ".write": "auth != null && root.child('providers').child($providerId).child('director_uid').val() === auth.uid",
+
+        "$itemId": {
+          ".validate": "newData.hasChildren(['name', 'item_type', 'quantity', 'status'])",
+          "name": {
+            ".validate": "newData.isString() && newData.val().length > 0"
+          },
+          "item_type": {
+            ".validate": "newData.isString()"
+          },
+          "quantity": {
+            ".validate": "newData.isNumber() && newData.val() >= 0"
+          },
+          "status": {
+            ".validate": "newData.isString() && (newData.val() === 'available' || newData.val() === 'insufficient' || newData.val() === 'missing')"
+          },
+          "updated_by": {
+            ".validate": "newData.val() === auth.uid"
+          }
+        }
+      }
+    }
+  }
+}

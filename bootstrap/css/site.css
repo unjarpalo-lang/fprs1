@@ -1,0 +1,364 @@
+:root {
+  --site-green-950: #0f2438;
+  --site-green-800: #16324a;
+  --site-green-700: #1c4363;
+  --site-green-600: #2a5c82;
+  --site-green-100: #dde9f4;
+  --site-green-50: #f2f6fa;
+  --site-yellow-500: #d8ad27;
+  --site-yellow-400: #eac449;
+  --site-ink: #1b2530;
+  --site-muted: #56697a;
+  --site-white: rgba(255, 255, 255, 0.9);
+}
+
+html {
+  background: #dbeefa;
+}
+
+body {
+  color: var(--site-ink);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
+
+.site-main {
+  animation: page-enter 500ms ease-out both;
+}
+
+.site-main > * {
+  animation: content-rise 550ms ease-out both;
+}
+
+.site-main > *:nth-child(2) { animation-delay: 70ms; }
+.site-main > *:nth-child(3) { animation-delay: 140ms; }
+.site-main > *:nth-child(4) { animation-delay: 210ms; }
+
+.site-main a,
+.site-main button {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.bg-funeral-500 {
+  color: var(--site-green-950) !important;
+}
+
+header a {
+  transition: color 180ms ease, transform 180ms ease, background-color 180ms ease;
+}
+
+.site-main a:focus-visible,
+.site-main button:focus-visible,
+.site-main input:focus-visible,
+.site-main select:focus-visible,
+.site-main textarea:focus-visible {
+  outline: 3px solid rgba(234, 196, 73, 0.55);
+  outline-offset: 2px;
+}
+
+.site-main section,
+.site-main article {
+  border-color: rgba(28, 67, 99, 0.16);
+}
+
+.site-main input,
+.site-main select,
+.site-main textarea {
+  border-color: rgba(28, 67, 99, 0.24);
+  color: var(--site-ink);
+}
+
+.site-main input::placeholder,
+.site-main textarea::placeholder {
+  color: #71828f;
+}
+
+.site-footer {
+  box-shadow: 0 -10px 30px rgba(10, 30, 46, 0.08);
+}
+
+/* ---- Ambient sky backdrop: fixed behind everything, purely decorative ---- */
+
+.sky-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(180deg, #17518f 0%, #2f7dc4 20%, #4f9bd8 38%, #7fbde6 56%, #aedaf0 75%, #dbeefa 100%);
+}
+
+.sky-backdrop .sky-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sky-backdrop .sky-veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(240, 246, 251, 0.26) 55%, rgba(236, 244, 250, 0.38) 100%);
+}
+
+.sky-backdrop::before {
+  content: "";
+  position: absolute;
+  top: -12%;
+  right: 6%;
+  width: 42vmax;
+  height: 42vmax;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 68%);
+  pointer-events: none;
+}
+
+.sky-backdrop .cloud {
+  position: absolute;
+  top: var(--cloud-top, 10%);
+  left: 0;
+  width: var(--cloud-w, 100px);
+  height: calc(var(--cloud-w, 100px) * 0.36);
+  background: radial-gradient(circle at 32% 26%, #ffffff 0%, #f4f8fc 50%, #dde8f3 100%);
+  border-radius: 999px;
+  opacity: var(--cloud-o, 0.7);
+  filter: url(#cloud-fluff) blur(0.4px);
+  will-change: transform;
+  animation: cloud-drift var(--cloud-dur, 160s) linear infinite;
+  animation-delay: var(--cloud-delay, 0s);
+}
+
+.sky-backdrop .cloud::before,
+.sky-backdrop .cloud::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #f4f8fc 55%, #dde8f3 100%);
+  border-radius: 50%;
+}
+
+.sky-backdrop .cloud::before {
+  width: 58%;
+  height: 190%;
+  top: -95%;
+  left: 12%;
+}
+
+.sky-backdrop .cloud::after {
+  width: 45%;
+  height: 150%;
+  top: -70%;
+  right: 10%;
+}
+
+@keyframes cloud-drift {
+  from { transform: translateX(-30vw); }
+  to { transform: translateX(130vw); }
+}
+
+/* ---- Shared card / component language (kept as plain CSS so any page can opt in) ---- */
+
+.f-card {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.99) 0%, rgba(240, 245, 250, 0.97) 55%, rgba(230, 239, 247, 0.95) 100%);
+  border: 1px solid rgba(28, 67, 99, 0.14);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(15, 40, 70, 0.16);
+}
+
+.f-card-flat {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.99) 0%, rgba(242, 246, 250, 0.97) 100%);
+  border: 1px solid rgba(28, 67, 99, 0.12);
+  border-radius: 18px;
+}
+
+/* Page-header banners and one-off panels across admin/director/client pages use
+   raw Tailwind bg-white/NN (translucent) on a div/section instead of .f-card.
+   Against a moving video background those can go dim depending on the frame, so
+   force them opaque with the same gradient-white treatment. Scoped to the
+   opacity-suffixed variant only (bg-white/80, bg-white/90, ...) so it never
+   touches the many small buttons/inputs/labels that use plain, already-opaque
+   bg-white — those need no fix. Matches anywhere inside the main content area,
+   by attribute match only, no markup changes needed. */
+.site-main div[class*="bg-white/"],
+.site-main section[class*="bg-white/"] {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(240, 245, 250, 0.97) 100%) !important;
+  box-shadow: 0 10px 24px rgba(15, 40, 70, 0.1);
+}
+
+.f-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--site-green-700);
+}
+
+.f-icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 14px;
+  background: linear-gradient(160deg, var(--site-green-100), #ffffff);
+  color: var(--site-green-700);
+  flex-shrink: 0;
+}
+
+.f-step {
+  position: relative;
+  padding-left: 2.75rem;
+}
+
+.f-step::before {
+  content: attr(data-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--site-green-700);
+  color: #fdfdf9;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.admin-record-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+}
+
+.admin-record-identity,
+.admin-record-details,
+.admin-record-actions {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.admin-record-name {
+  min-width: 0;
+  flex: 1 1 100%;
+}
+
+.admin-record-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.admin-record-actions > a,
+.admin-record-actions > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  white-space: normal;
+}
+
+@media (min-width: 900px) {
+  .admin-record-grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1.2fr);
+  }
+
+  .admin-record-actions {
+    justify-content: flex-end;
+  }
+}
+
+.f-pill-pending { background: #fef3c7; color: #92400e; }
+.f-pill-approved { background: #d1fae5; color: #065f46; }
+.f-pill-rejected { background: #fee2e2; color: #991b1b; }
+
+.f-quote {
+  border-left: 3px solid var(--site-yellow-500);
+  padding-left: 1rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  color: var(--site-green-800);
+}
+
+.f-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(23,107,69,0.18), transparent);
+}
+
+@keyframes page-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes content-rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Audit reflow fixes: constrain flex/grid children, rather than hiding content. */
+.site-main { overflow-wrap: anywhere; }
+.site-main :where(div,section,article,form,fieldset) { min-width: 0; }
+.site-main :where(.flex,.grid) > * { min-width: 0; max-width: 100%; }
+.site-main :where(h1,h2,h3,p,span,a) { overflow-wrap: anywhere; }
+.site-main :where(input,select,textarea) { max-width: 100%; }
+.site-main input.flex-1 { width: 0; }
+
+.login-password-field { position: relative; }
+.login-password-field input { padding-right: 3.5rem; }
+.login-password-toggle {
+  position: absolute; right: .25rem; top: 50%; transform: translateY(-50%);
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: .75rem; color: #1c4363;
+}
+.login-password-toggle:hover { background: #dde9f4; }
+.login-password-toggle:focus-visible { outline: 2px solid #2a5c82; outline-offset: 1px; }
+.login-password-toggle [hidden] { display: none; }
+.package-catalog-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+.package-inclusions-compact { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
+.package-inclusions-compact .package-inclusion-item { flex-wrap: nowrap !important; }
+.package-inclusions-compact .package-inclusion-text { flex: 1; min-width: 0; }
+.package-inclusions-compact .package-inclusion-text > div { white-space: normal; word-break: normal; overflow-wrap: break-word; }
+.service-row .service-name, .service-row .service-detail { flex: 1 1 12rem; min-width: min(100%, 12rem); }
+.site-main .f-pill { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+.site-main .truncate { white-space: normal; overflow: visible; overflow-wrap: anywhere; }
+.site-main form :where(.flex) { flex-wrap: wrap; }
+@media(max-width:639px) {
+  .site-main .flex.justify-between { flex-wrap: wrap; }
+  .site-main .flex.gap-2, .site-main .flex.gap-3, .site-main .flex.gap-4 { flex-wrap: wrap; }
+  .site-main .password-toggle { min-height: 44px; }
+}

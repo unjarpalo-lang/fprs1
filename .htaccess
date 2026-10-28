@@ -1,0 +1,11 @@
+# Never show raw PHP errors/warnings/stack traces to visitors — they leak
+# absolute server file paths and internal structure (confirmed live via a
+# direct request to client/_package_result.php). Errors still get logged.
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>

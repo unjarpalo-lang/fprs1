@@ -1,0 +1,15 @@
+# Firebase service-account credential — never commit this.
+storage/firebase-service-account.json
+storage/*.json
+
+# In case Composer/kreait-firebase-php gets added later (see includes/firebase_init.php)
+/vendor/
+composer.lock
+
+# User-uploaded files are personal data (valid IDs, business licenses) and must
+# never enter version control. .htaccess is kept because it is the protection.
+uploads/*
+!uploads/.htaccess
+
+# Local stabilization backups and draft artifacts.
+.codex-review/
